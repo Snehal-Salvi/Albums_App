@@ -2,37 +2,134 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: cursive;
+  background-color: rgb(243, 241, 247);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar {
+  background: linear-gradient(to right, #795b9b, #455dca );
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar a {
+  text-decoration: none;  
+  color: rgb(253, 253, 253);
+  
+}
+
+.album-list {
+  list-style: none;
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.album-card {
+  background-color: rgb(250, 195, 251);
+  border: 2px solid #020101;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 15px;
+  width: 200px;
+  box-shadow: 4px 4px 4px 4px rgb(199, 196, 241);
+  transition: transform 0.3s ease-in-out;
+  color: black;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.album-details h3 {
+  margin: 0;
 }
+
+.album-actions {
+  margin-top: 10px;
+}
+
+.edit-button{
+  background-color: #1d43dd;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  margin-right: 5px;
+  cursor: pointer;
+  border: 2px solid #020101;
+  font-weight: 900;
+}
+
+.delete-button{
+  background-color: red;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  margin-right: 5px;
+  cursor: pointer;
+  border: 2px solid #020101;
+  font-weight: 900;
+}
+
+.edit-button:hover{
+  color: black;
+  background-color: rgb(143, 145, 222);
+
+}
+
+.delete-button:hover {
+  color: black;
+  background-color: rgb(240, 93, 93);
+
+}
+
+input {
+  width: 90%;
+  height: 8vh;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: rgb(206, 208, 239);
+  font-size: 15px;
+  font-family: cursive;
+  font-weight: 900;
+}
+
+.save-button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 8px 12px;
+  margin-right: 5px;
+  cursor: pointer;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.add-album-form{
+margin-top: 20px;
+width: 80%;
+background-color: #e2dddd;
+font-size: 20px;
+background: linear-gradient(to right, #dde0f1, #a9a9ab );
+}
+
+.add-album-button {
+  margin-top: 8px;
+  background-color: #41e665;
+  color: #070606;
+  padding: 8px 12px;
+  cursor: pointer;
+  border: 2px solid rgb(0, 0, 0);
+  font-weight: 900;
+  margin-left: 5px;
+}
+
+.add-album-button:hover {
+  color: rgb(244, 241, 241);
+  background-color: rgb(12, 100, 34);
+
+}
+

@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+import React from 'react';
+import AlbumsList from './components/AlbumsList';
+import NavBar from './components/NavBar';
 import './App.css';
+import { Provider } from 'react-redux';  // Import the Provider component
+import store from './store';
+import NewAlbumForm from './components/NewAlbumForm';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+    <Provider store={store}>  
+      <div className="App">
+        <NavBar /> {/* Render the NavBar component */}
+        <NewAlbumForm /> {/* Render the NewAlbumForm component */}
+        <AlbumsList /> {/* Render the AlbumsList component */}
+      </div>
+    </Provider>  
   );
 }
 
