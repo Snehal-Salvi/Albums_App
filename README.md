@@ -3,6 +3,11 @@
 - This is a simple React-Redux application that allows users to manage a list of albums. Users can view, add, edit, and delete albums. 
 - The application uses Redux for state management and connects to a mock API to fetch and update album data.
 
+## Project Link
+https://albums-5omg.onrender.com
+
+
+
 ## Features
 
 ### 1. View Albums
